@@ -1,13 +1,64 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.skew-gradient {
+  /* bottom: 28.5em; */
+  /* bottom: 0; */
+  bottom: -32.5em;
+  right: 0;
+  height: 50em;
+  width: 120em;
+  background: linear-gradient(
+    180deg,
+    rgba(242, 201, 76, 0.2) 0%,
+    rgba(242, 153, 74, 0.2) 100%
+  );
+  transform: rotate(-15deg);
+}
+
+.custom-container {
+  width: 36em;
+  max-width: 36em;
+}
+
+.form-control,
+.form-select {
+  border: 1px solid #4e598c;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.btn {
+  background: linear-gradient(180deg, #f2c94c 0%, #f2994a 100%);
+  border: none !important;
+  color: white;
+}
+
+.btn:active {
+  background: linear-gradient(180deg, #f2c94c 0%, #f2994a 100%) !important;
+}
+
+/* .expiration {
+  border: 1px solid #bbbbbb;
+}
+.expiration input {
+  border: 0;
+} */
+
+.route-active {
+  color: #f2994a;
+}
+
+.active {
+  background: #f2994a;
+  border-radius: 10px;
+  height: 10px;
+  width: 8em;
+  bottom: -5px;
+  right: -17px;
+}
+
+.route-nav {
+  gap: 7rem !important;
 }
